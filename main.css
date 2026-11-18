@@ -1,0 +1,414 @@
+
+
+:root {
+
+    --color-head: black;
+    --color-text: #261f15;
+    --color-highlight: #e86f2e;
+    --color-back: #fcf9f2;
+
+    --space-1: 1rem;
+    --space-2: 2rem;
+    --space-3: 3rem;
+    --space-4: 5rem;
+    --space-5: 7rem;
+    --space-6: 9rem;
+
+    --font-1: 'Libre Baskerville', serif; 
+    --font-2: 'Special Gothic Expanded One', sans-serif;
+
+}
+
+body {
+    background-color: var(--color-back);
+}
+
+h1 {
+    font-family: var(--font-1);
+    font-size: var(--space-5);
+    font-weight: 700; 
+    margin-bottom: var(--space-2);
+    margin-left: var(--space-1);
+}
+
+h2 {
+    font-family: var(--font-1);
+    font-size: var(--space-4);
+    font-weight: 500; 
+}
+
+h3 {
+    font-family: var(--font-1);
+    font-size: var(--space-3);
+    font-weight: 700;
+    margin-left: var(--space-3);
+}
+
+h4 {
+    font-family: var(--font-1);
+    font-size: var(--space-2);
+    font-weight: 700;
+    margin-left: var(--space-6);
+}
+
+h5 {
+    font-family: var(--font-1);
+    font-size: var(--space-1);
+    font-weight: 700;
+    margin-left: var(--space-6);
+}
+
+p {
+    font-family: var(--font-1);
+    font-size: var(--space-1);
+    color: var(--color-text);
+    margin-left: var(--space-5);
+    padding: 10px;
+    line-height: var(--space-2);
+}
+
+.text {
+    width: 40%;
+}
+
+.menu-select {
+    position: fixed;
+    display: inline-block;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    top: 0px;
+    background-color: var(--color-back);
+    width: 65%;
+    z-index: 5;
+    border-radius: 50px;
+}
+
+.button { 
+    position: relative;
+    display: inline-flex;
+    left: var(--space-1);
+    padding: 50px;
+    text-decoration: underline;
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: var(--space-3);
+    color: var(--color-text);
+    padding-right: 30px;
+    transition: left .5s ease-out;
+}
+
+.button:hover {
+    position: relative;
+    color: var(--color-highlight);
+    cursor: pointer;
+    left: var(--space-2);
+}
+
+.button:active {
+    position: relative;
+    color: var(--color-head);
+}
+
+#logo {
+    width: 15%;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.heading {
+    margin-top: 10rem;
+    margin-left: var(--space-3);
+    display: flex;
+    flex-direction: row;
+}
+
+.type {
+    position: absolute;
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 20%;
+    right: 5rem; 
+    top: 1rem; 
+    text-align: justify; 
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.rick {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    color: white;
+    text-align: right; 
+    position: absolute; 
+    top: 14rem; 
+    right: 3rem;
+    border: solid 1px black;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.la {
+    text-align: right; 
+    position: absolute; 
+    top: 18rem; 
+    right: 3rem;
+}
+
+div > .date {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    font-size: var(--space-3);
+    color: white;
+    border: solid 1px black;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.bdate {
+    font-size: var(--space-3);
+    font-weight: 700;
+}
+
+.datebox {
+    position: inherit;
+    display: inline-flex;
+    flex-direction: row;
+    height: 50px;
+    margin-left: 3rem;
+}
+
+.lcolumn {
+    width: 30%;
+    margin-left: var(--space-2);
+}
+
+.rcolumn {
+    position: absolute;
+    right: 3rem;
+    width: 50%;
+}
+
+.mcolumn {
+    position: absolute;
+    left: 40rem;
+    width: 30%;
+}
+
+.bar {
+    position: absolute;
+    left: 9rem;
+    top: 69rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    z-index: -1;
+    border-left: solid 2px black;
+}
+
+.box {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 54px;
+    margin-left: 2rem;
+    font-size: var(--space-2);
+    color: white;
+    border: solid 1px black;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 1640px) {
+    .button {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .button {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .button {
+        font-size: 1.7rem;
+        padding: 40px;
+    }
+    .heading {
+        margin-top: 9rem;
+    }
+    .type {
+        font-size: 0.75rem;
+        text-align: left;
+        width: 15%
+    }
+    .rick {
+        font-size: 0.9rem;
+        margin-top: 7rem;
+    }
+    .la {
+        font-size: 0.9rem;
+        margin-top: 7rem;
+    }
+    h1 {
+        font-size: 6rem;
+    }
+    .menu-select {
+        width: 64%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .button {
+        font-size: 1.6rem;
+        padding: 30px;
+    }
+    .type {
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    .rick {
+        font-size: 0.8rem;
+        margin-top: 7rem;
+    }
+    .la {
+        font-size: 0.8rem;
+        margin-top: 7rem;
+    }
+    h1 {
+        font-size: var(--space-4);
+    }
+    h2 {
+        font-size: var(--space-3);
+    }
+    h3 {
+        font-size: var(--space-2);
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .button {
+        font-size: 1.5rem;
+    }
+    .heading {
+        margin-top: 8rem;
+    }
+    .type {
+        font-size: 0.6rem;
+        text-align: left;
+        line-height: 1.5rem;
+    }
+    .rick {
+        font-size: 0.7rem;
+        margin-top: 8rem;
+    }
+    .la {
+        font-size: 0.7rem;
+        margin-top: 8rem;
+    }
+    h1 {
+        font-size: var(--space-3);
+    }
+    h2 {
+        font-size: var(--space-2);
+    }
+    h3 {
+        font-size: var(--space-1);
+    }
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .button {
+        font-size: 1.4rem;
+    }
+    .type {
+        font-size: 0.5rem;
+        text-align: left;
+        right: 4rem;
+    }
+    .rick {
+        font-size: 0.6rem;
+    }
+    .la {
+        font-size: 0.6rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .button {
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+    .heading {
+        margin-top: 7rem;
+    }
+    .type {
+        right: 3rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .button {
+        font-size: 1rem;
+        padding: 15px;
+    }
+    .heading {
+        margin-top: 6rem;
+    }
+    .rick {
+        font-size: 0.5rem;
+    }
+    .la {
+        font-size: 0.5rem;
+    }
+    .menu-select {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .type {
+        right: 2rem;
+    }
+    .rick {
+        font-size: 0.4rem;
+    }
+    .la {
+        font-size: 0.4rem;
+    }
+    .menu-select {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .rick {
+        font-size: 0.3rem;
+    }
+    .la {
+        font-size: 0.3rem;
+    }
+}
