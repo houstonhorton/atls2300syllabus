@@ -181,8 +181,9 @@ div > .date {
 }
 
 .lcolumn {
-    width: 30%;
-    margin-left: var(--space-2);
+    position: absolute;
+    width: 35%;
+    left: 4rem;
 }
 
 .rcolumn {
@@ -193,8 +194,8 @@ div > .date {
 
 .mcolumn {
     position: absolute;
-    left: 40rem;
-    width: 30%;
+    left: 35rem;
+    width: 35%;
 }
 
 .bar {
@@ -219,6 +220,24 @@ div > .date {
     border: solid 1px black;
     background-color: black;
     border-radius: 10px;
+}
+
+.grade {
+    position: absolute;
+    right: 30rem;
+    border-radius: 5px;
+    width: 5%;
+}
+
+.block {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-direction: column;
+    background-color: var(--color-highlight);
+    border-radius: 5px;
+    border-bottom: solid 2px black;
+    border-right: solid 3px black;
 }
 
 
